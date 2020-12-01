@@ -29,8 +29,8 @@ model: ReportTemplate
 <%-     task.action_output[:outputs].each do |output| -%>
 <%-       report_row(
             host: host.name,
-            type: output[:output_type],
-            message: output[:message],
+            type: output[:type],
+            message: output[:value],
             ended_at: task.ended_at,
           ) -%>
 <%-     end -%>

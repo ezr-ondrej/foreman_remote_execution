@@ -51,6 +51,7 @@ class JobReportTemplateTest < ActiveSupport::TestCase
         composer = ReportComposer.new(params)
         time = Time.now
         data = composer.render
+        pp data
         #todo assertion
       end
     end
